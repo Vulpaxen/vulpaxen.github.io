@@ -1,0 +1,78 @@
+/*
+ * Base structure
+ */
+body {
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.coverbg {
+	height: 100vh;
+	background-size: cover;
+	background-image: url(img/background.jpg);
+	display: flex;
+	flex-direction: column;
+}
+
+.coverbg h1{
+	margin: auto;
+	text-align: center;
+}
+
+.coverbg p{
+	margin: auto;
+	text-align: center;
+}
+
+/*
+ * Header
+ */
+.nav-masthead .nav-link {
+	color: rgba(255, 255, 255, .5);
+	background:
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(
+      to right,
+      rgba(70, 180, 127, 1),
+      rgba(173, 255, 195, 1),
+      rgba(232, 250, 234, 1)
+  	);
+	background-size: 100% 10%, 0 10%;
+	background-position: 100% 100%, 0 100%;
+	background-repeat: no-repeat;
+	transition: background-size 0.4s ease;
+}
+
+.nav-masthead .nav-link:hover {
+	background-size: 0 10%, 100% 10%;
+	color: rgba(255, 255, 255, 1);
+	transition: 0.6s;
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 4rem;
+}
+
+.nav-masthead .nav-link:focus {
+	color: rgba(255, 255, 255);
+	background:
+    linear-gradient(
+      to top,
+      transparent,
+      rgba(255, 255, 255)
+    );
+	background-size: 100% 10%;
+	background-position: 0 100%, 100% 100%;
+	background-repeat: no-repeat;
+	transition: background-size 0.6s ease, transform 0.3s;
+	transform: scale(1.05);
+}
+
+/* COVER */
+
+.container-fluid{
+	padding: 0;
+}
