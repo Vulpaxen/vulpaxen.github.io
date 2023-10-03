@@ -2,87 +2,97 @@
  * Base structure
  */
 body {
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
 }
 
-a{
-	text-decoration: none;
-	color: gray;
-	transition: 0.5s;
+a {
+  text-decoration: none;
+  color: rgb(95, 95, 95);
+  transition: 0.5s;
 }
 
-a:hover{
-	color: white;
+a:hover {
+  color: white;
 }
 
-header{
-	transition: background-color 0.2s ease, opacity 0.2s ease;
+a.nav-link {
+  padding: 9px;
+}
+
+header {
+  transition: background-color 0.2s ease, opacity 0.2s ease;
 }
 
 header.scrolled {
-    background-color: #0f101b;
-    opacity: 1;
+  background-color: #1a1a1d;
+  opacity: 1;
 }
 
 .coverbg {
-	height: 100vh;
-	background-size: cover;
-	background-image: url(img/background.jpg);
-	display: flex;
-	flex-direction: column;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(img/background.jpg);
+  display: flex;
+  flex-direction: column;
 }
 
-.coverbg h1{
-	margin: auto;
-	text-align: center;
+.coverbg h1 {
+  margin: auto;
+  text-align: center;
 }
 
-.coverbg p{
-	margin: auto;
-	text-align: center;
+.coverbg p {
+  margin: auto;
+  text-align: center;
 }
 
-button{
-	background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
-	flex: 1 1 auto;
-	background-size: 200% auto;
-	box-shadow: 0 0 20px #eee;
-	border: none !important;
+button {
+  background-image: linear-gradient(
+    to right,
+    #fbc2eb 0%,
+    #a6c1ee 51%,
+    #fbc2eb 100%
+  );
+  flex: 1 1 auto;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #eee;
+  border: none !important;
 }
 
 button:hover {
-	transition: 0.5s;
-    background-position: right center;
+  transition: 0.5s;
+  background-position: right center;
 }
 
 /*
  * Header
  */
 .nav-pills .nav-link {
-	color: rgb(189, 189, 189);
-	background:
-    linear-gradient(
+  color: rgb(189, 189, 189);
+  background: linear-gradient(
       to right,
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0)
     ),
     linear-gradient(
       to right,
-      rgba(70, 180, 127, 1),
-      rgba(173, 255, 195, 1),
-      rgba(232, 250, 234, 1)
-  	);
-	background-size: 100% 10%, 0 10%;
-	background-position: 100% 100%, 0 100%;
-	background-repeat: no-repeat;
-	transition: background-size 0.4s ease;
-	font-weight: bold;
+      rgb(255, 96, 218),
+      rgb(225, 169, 246),
+      rgb(209, 187, 249),
+      rgb(181, 229, 255),
+      rgb(103, 202, 255)
+    );
+  background-size: 100% 10%, 0 10%;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease;
+  font-weight: bold;
 }
 
 .nav-pills .nav-link:hover {
-	background-size: 0 10%, 100% 10%;
-	color: rgba(255, 255, 255, 1);
-	transition: 0.6s;
+  background-size: 0 10%, 100% 10%;
+  color: rgba(255, 255, 255, 1);
+  transition: 0.6s;
 }
 
 .nav-pills .nav-link + .nav-link {
@@ -90,22 +100,41 @@ button:hover {
 }
 
 .nav-pills .nav-link:focus {
-	color: rgba(255, 255, 255);
-	background:
-    linear-gradient(
-      to top,
-      transparent,
-      rgba(255, 255, 255)
-    );
-	background-size: 100% 10%;
-	background-position: 0 100%, 100% 100%;
-	background-repeat: no-repeat;
-	transition: background-size 0.6s ease, transform 0.3s;
-	transform: scale(1.05);
+  color: rgba(255, 255, 255);
+  background: linear-gradient(to top, transparent, rgba(255, 255, 255));
+  background-size: 100% 10%;
+  background-position: 0 100%, 100% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.6s ease, transform 0.3s;
+  transform: scale(1.05);
+}
+
+#logo {
+    transition: opacity 0.2s;
+}
+
+.hovicon:after {
+    pointer-events: none;
+    position: absolute;
+    width: 91%;
+    height: 93%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+    top: 3px;
+    left: 3px;
+    z-index: -1;
+    background: #fff;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.hovicon:hover:after {
+    transform: scale(1.3);
+    opacity: 0;
 }
 
 /* COVER */
 
-.container-fluid{
-	padding: 0;
+.container-fluid {
+  padding: 0;
 }

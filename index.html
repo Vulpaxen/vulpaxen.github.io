@@ -22,29 +22,34 @@
       <header class="fixed-top d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
         <div class="col-md-3 mb-2 mb-md-0">
           <a
-            href="/"
+            href="#"
             class="d-inline-flex link-body-emphasis text-decoration-none"
           >
+          <div class="hovicon position-relative">
             <image
-              src="img/Logo.png"
+              src="img/LogoInvert.png"
               alt="Logo"
-              class="d-inline-block align-text-top navbar-brand"
-              width="170"
-              height="85"
+              class="logo d-inline-block align-text-top navbar-brand"
+              width="70"
+              height="70"
+              id="logo"
+              onmouseover="changeImage()" onmouseout="resetImage()"
             />
+        </div>
+              
           </a>
         </div>
 
-        <nav class="nav nav-pills" id="navbarText">
+        <nav class="nav nav-pills mx-5" id="navbarText">
           <ul class="nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Education</a>
-            </li>
-            <li class="nav-item">
+            <li class="nav-item px-3">
               <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
         </nav>
@@ -56,11 +61,10 @@
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
               <div class="col-10 col-sm-8 col-lg-6">
                 <img
-                  src="img/Logo.png"
-                  class="d-block mx-lg-auto img-fluid"
-                  alt="Bootstrap Themes"
-                  width="700"
-                  height="500"
+                  src="img/ZoomedAvatar.png"
+                  class="d-block mx-lg-auto img-fluid rounded-circle"
+                  width="200"
+                  height="300"
                   loading="lazy"
                 />
               </div>
@@ -213,16 +217,13 @@
 
       <div class="container">
         <footer
-          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4"
         >
           <div class="col-md-4 d-flex align-items-center">
             <a
               href="/"
               class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
             >
-              <svg class="bi" width="30" height="24">
-                <use xlink:href="#bootstrap" />
-              </svg>
             </a>
             <span class="mb-3 mb-md-0 text-body-secondary">Joaquin Arlind</span>
           </div>
@@ -230,21 +231,15 @@
           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li class="ms-3">
               <a class="text-body-secondary" href="#"
-                ><svg class="bi" width="24" height="24">
-                  <use xlink:href="#twitter" /></svg
-              ></a>
+                ></a>
             </li>
             <li class="ms-3">
               <a class="text-body-secondary" href="#"
-                ><svg class="bi" width="24" height="24">
-                  <use xlink:href="#instagram" /></svg
-              ></a>
+                ></a>
             </li>
             <li class="ms-3">
               <a class="text-body-secondary" href="#"
-                ><svg class="bi" width="24" height="24">
-                  <use xlink:href="#facebook" /></svg
-              ></a>
+                ></a>
             </li>
           </ul>
         </footer>
