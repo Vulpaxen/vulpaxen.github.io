@@ -159,7 +159,8 @@ header.scrolled {
 
 @media (max-width: 576px) {
   .card-img-top {
-    max-height: 700px;
+    height: auto;
+    max-height: 500px;
   }
 }
 
@@ -173,7 +174,6 @@ button {
   );
   flex: 1 1 auto;
   background-size: 200% auto;
-  box-shadow: 0 0 20px #eee;
   border: none !important;
 }
 
@@ -184,9 +184,14 @@ button:hover {
 
 #btn-back-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 48px;
+  right: 25px;
   display: none;
+}
+
+#emailBtn:hover{
+  transition: 0.5s;
+  color: white !important;
 }
 
 /* RESPONSIVE */

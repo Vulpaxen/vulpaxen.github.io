@@ -15,6 +15,7 @@ function toggleNavLinksAndHeader() {
 
   const header = document.getElementById("header");
   header.classList.toggle("d-flex");
+  
 }
 
 const logo = document.getElementById("logo");
@@ -86,7 +87,7 @@ TxtType.prototype.tick = function () {
   }
 
   var that = this;
-  var delta = 80;
+  var delta = 300;
 
   if (this.isDeleting) {
     delta /= 2;
@@ -141,3 +142,29 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// Navbar href
+document.addEventListener("DOMContentLoaded", function () {
+  function scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+          const navbarHeight = document.querySelector('.fixed-top').offsetHeight;
+          const sectionPosition = section.offsetTop - navbarHeight;
+
+          window.scrollTo({
+              top: sectionPosition,
+              behavior: "smooth"
+          });
+      }
+  }
+
+  // Add click event listeners to your navbar links
+  const navbarLinks = document.querySelectorAll('.nav-link');
+  navbarLinks.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetSectionId = this.getAttribute('href').substring(1);
+          scrollToSection(targetSectionId);
+      });
+  });
+});
