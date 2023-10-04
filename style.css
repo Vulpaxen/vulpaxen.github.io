@@ -1,6 +1,4 @@
-/*
- * Base structure
- */
+/* BASE */
 body {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
 }
@@ -47,14 +45,19 @@ a.nav-link {
   align-items: flex-start;
 }
 
-/* Header */
+/* HEADER */
 header {
   transition: background-color 0.2s ease, opacity 0.2s ease;
+  display: flex;
 }
 
 header.scrolled {
   background-color: #1a1a1d;
   opacity: 1;
+}
+
+#header{
+  opacity: 95%;
 }
 
 .nav-pills .nav-link {
@@ -112,45 +115,6 @@ header.scrolled {
   transform: scale(1.05);
 }
 
-@media (max-width: 410px) {
-  .nav-link {
-    font-size: 12px;
-    padding-left: 0.1rem !important;
-    padding-right: 0.1rem !important;
-  }
-}
-
-@media (max-width: 345px) {
-  .nav-item {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-}
-
-@media (max-width: 290px) {
-  .nav-item {
-    padding-left: 4px !important;
-    padding-right: 4px !important;
-  }
-}
-
-@media (max-width: 253px) {
-  .nav-item {
-    padding-left: 2px !important;
-    padding-right: 2px !important;
-  }
-}
-
-@media (max-width: 239px) {
-  .nav-item {
-    padding-left: 0.2px !important;
-    padding-right: 0.2px !important;
-  }
-  .nav-link {
-    font-size: 10px;
-  }
-}
-
 #logo {
   transition: opacity 0.2s;
 }
@@ -176,13 +140,11 @@ header.scrolled {
 }
 
 /* COVER */
-
 .container-fluid {
   padding: 0;
 }
 
 /* CARD */
-
 @media (max-width: 1200px) {
   .card-img-top {
     max-height: 250px;
@@ -218,4 +180,81 @@ button {
 button:hover {
   transition: 0.5s;
   background-position: right center;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 855px) {
+  #btn-back-to-top {
+    display: none!important;
+  }
+}
+
+@media (max-width: 580px) {
+  #logo{
+    width: 50px;
+    height: 50px;
+  }
+  .nav-collapse {
+    display: none;
+  }
+  header {
+    display: inline !important;
+  }
+}
+
+@media (max-width: 460px) {
+  .nav-link {
+    font-size: 12px;
+    padding-left: 0.1rem !important;
+    padding-right: 0.1rem !important;
+  }
+  #logo{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 345px) {
+  .nav-item {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+}
+
+@media (max-width: 364px) {
+  .nav-item {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+}
+
+@media (max-width: 290px) {
+  .nav-item {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+}
+
+@media (max-width: 253px) {
+  .nav-item {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
+}
+
+@media (max-width: 239px) {
+  .nav-item {
+    padding-left: 0.2px !important;
+    padding-right: 0.2px !important;
+  }
+  .nav-link {
+    font-size: 10px;
+  }
 }
