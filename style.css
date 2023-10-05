@@ -1,16 +1,13 @@
 /* BASE */
-body {
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
-}
 
 a {
   text-decoration: none;
-  color: rgb(95, 95, 95);
+  color: rgb(70, 70, 70);
   transition: 0.5s;
 }
 
 a:hover {
-  color: white;
+  color: rgb(248,249,250);
 }
 
 a.nav-link {
@@ -24,6 +21,7 @@ a.nav-link {
   background-image: url(img/background.jpg);
   display: flex;
   flex-direction: column;
+  background-attachment: fixed;
 }
 
 .coverbg h1 {
@@ -36,8 +34,8 @@ a.nav-link {
   text-align: center;
 }
 
-.bio a{
-  color:white;
+.bio a {
+  color: rgb(248,249,250);
 }
 
 .typewrite {
@@ -56,7 +54,7 @@ header.scrolled {
   opacity: 1;
 }
 
-#header{
+#header {
   opacity: 95%;
 }
 
@@ -84,7 +82,7 @@ header.scrolled {
 
 .nav-pills .nav-link:hover {
   background-size: 0 10%, 100% 10%;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(248,249,250, 1);
   transition: 0.6s;
 }
 
@@ -93,24 +91,14 @@ header.scrolled {
 }
 
 .nav-pills .nav-link:focus {
-	color: rgba(255, 255, 255);
-	color: rgba(255, 255, 255);
-	background:
-    linear-gradient(
-      to top,
-      transparent,
-      rgba(255, 255, 255)
-    );
-  color: rgba(255, 255, 255);
-	background:
-    linear-gradient(
-      to top,
-      transparent,
-      rgba(255, 255, 255)
-    );
-	background-size: 100% 10%;
-	background-position: 0 100%, 100% 100%;
-	background-repeat: no-repeat;
+  color: rgba(248,249,250);
+  color: rgba(248,249,250);
+  background: linear-gradient(to top, transparent, rgba(248,249,250));
+  color: rgba(248,249,250);
+  background: linear-gradient(to top, transparent, rgba(248,249,250));
+  background-size: 100% 10%;
+  background-position: 0 100%, 100% 100%;
+  background-repeat: no-repeat;
   transition: none;
   transform: scale(1.05);
 }
@@ -119,91 +107,14 @@ header.scrolled {
   transition: opacity 0.2s;
 }
 
-.hovicon:after {
-  pointer-events: none;
-  position: absolute;
-  width: 91%;
-  height: 93%;
-  border-radius: 50%;
-  content: "";
-  box-sizing: content-box;
-  top: 3px;
-  left: 3px;
-  z-index: -1;
-  background: #fff;
-  transition: transform 0.4s, opacity 0.4s;
-}
-
-.hovicon:hover:after {
-  transform: scale(1.3);
-  opacity: 0;
-}
-
-/* COVER */
-.container-fluid {
-  padding: 0;
-}
-
-/* CARD */
-@media (max-width: 1200px) {
-  .card-img-top {
-    max-height: 250px;
-  }
-}
-
-@media (max-width: 990px) {
-  .card-img-top {
-    max-height: 200px;
-  }
-}
-
-@media (max-width: 576px) {
-  .card-img-top {
-    height: auto;
-    max-height: 500px;
-  }
-}
-
-/* BUTTON */
-button {
-  background-image: linear-gradient(
-    to right,
-    #fbc2eb 0%,
-    #a6c1ee 51%,
-    #fbc2eb 100%
-  );
-  flex: 1 1 auto;
-  background-size: 200% auto;
-  border: none !important;
-  box-shadow: none;
-}
-
-button:hover {
-  transition: 0.5s;
-  background-position: right center;
-}
-
-#btn-back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-}
-
-#emailBtn:hover{
-  transition: 0.5s;
-  color: white !important;
-}
-
-/* RESPONSIVE */
-@media (max-width: 855px) {
+@media (max-width: 1075px) {
   #btn-back-to-top {
-    display: none!important;
+    display: none !important;
   }
 }
 
-@media (max-width: 580px) {
-  #logo{
+@media (max-width: 767px) {
+  #logo {
     width: 50px;
     height: 50px;
   }
@@ -221,7 +132,7 @@ button:hover {
     padding-left: 0.1rem !important;
     padding-right: 0.1rem !important;
   }
-  #logo{
+  #logo {
     width: 40px;
     height: 40px;
   }
@@ -263,4 +174,190 @@ button:hover {
   .nav-link {
     font-size: 10px;
   }
+}
+
+.hovicon:after {
+  pointer-events: none;
+  position: absolute;
+  width: 91%;
+  height: 93%;
+  border-radius: 50%;
+  content: "";
+  box-sizing: content-box;
+  top: 3px;
+  left: 3px;
+  z-index: -1;
+  background: rgb(248,249,250);
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.hovicon:hover:after {
+  transform: scale(1.3);
+  opacity: 0;
+}
+
+/* ABOUT */
+.about {
+  padding: 1.5rem 4.5rem 0 4.5rem;
+}
+
+.about-container {
+  max-width: 1200px;
+  background-color: rgb(26, 26, 26);
+}
+
+@media screen and (min-width: 1024px) {
+  .about-container {
+    max-width: 1400px;
+  }
+}
+
+.about .col-lg-4 {
+  padding: 80px 30px;
+}
+
+@media (max-width: 994px) {
+  .about .col-lg-4 {
+    border-right: none!important;
+    border-left: none!important;
+    border-bottom: 1px solid rgb(248,249,250);;
+  }
+
+  .about .col-lg-4:last-child {
+    border-bottom: none; 
+  }
+}
+
+@media (max-width: 534px) {
+  .about{
+    padding: 0;
+  }
+}
+
+
+/* COVER */
+.container-fluid {
+  padding: 0;
+}
+
+.mouse-scroll,
+.mouse-scroll:before{
+  position: absolute;
+  left: 50%;
+  opacity: 30%;
+}
+
+.mouse-scroll-container {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mouse-scroll {
+  width: 25px;
+  height: 40px; 
+  box-shadow: inset 0 0 0 1px rgb(248,249,250);;
+  border-radius: 15px;
+}
+
+.mouse-scroll:before {
+  content: '';
+  width: 3px; 
+  height: 5px;
+  background: rgb(248,249,250);;
+  left: 50%;
+  top: 5px; 
+  margin-left: -1.5px;
+  border-radius: 4px;
+  animation-duration: 1.75s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+
+@keyframes scroll{
+  0%{
+    opacity: 1;
+  }
+  40%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+
+/* ALBUM */
+.album{
+  background-color: #f1f1f1!important;
+}
+
+.card-body{
+  background-color:#1a1a1d;
+  color: rgb(248,249,250);
+}
+
+@media (max-width: 1200px) {
+  .card-img-top {
+    max-height: 230px;
+  }
+}
+
+@media (max-width: 990px) {
+  .card-img-top {
+    max-height: 220px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: auto;
+    max-height: 500px;
+  }
+}
+
+/* BUTTON */
+button {
+  background-image: linear-gradient(
+    to right,
+    #fbc2eb 0%,
+    #a6c1ee 51%,
+    #fbc2eb 100%
+  );
+  flex: 1 1 auto;
+  background-size: 200% auto;
+  border: none !important;
+  box-shadow: none;
+}
+
+button:hover {
+  transition: 0.5s;
+  background-position: right center;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+#emailBtn{
+  background-image: none;
+  border: 2px solid rgb(248,249,250)!important;
+}
+
+#emailBtn:hover {
+  transition: 0.5s;
+  color: rgb(248,249,250)!important;
+}
+
+/* ANIMATIONS */
+
+.animate-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s, transform 0.5s;
 }

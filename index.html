@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Joa's Portofolio</title>
 
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -70,7 +71,7 @@
               <a class="nav-link" href="#header">Home</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item px-3">
               <a class="nav-link" href="#projects">Projects</a>
@@ -173,21 +174,203 @@
                   </li>
                 </ul>
               </div>
+              <div class="mouse-scroll-container">
+                <div class="mouse-scroll"></div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="album py-5 bg-body-tertiary" id="projects">
-          <h1 class="display-5 fw-bold text-body-emphasis">My Projects</h1>
-          <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4 text-black">
-              Welcome to my projects during college! They are group projects for
-              the final assignment of each subject respectively.
+        <div class="pt-5 text-center bg-dark" id="about">
+          <div class="py-2 container text-light">
+            <h1 class="display-6 fw-semibold animate-up">Hi, I'm Joa!</h1>
+            <p class="col-lg-7 mx-auto lead py-3 text-center animate-up">
+              Nice to meet you, thanks for visiting my website! I'm currently an
+              undergraduate Computer Science student, still lacking in
+              experience but I'm always seeking new knowledge to learn.
+            </p>
+            <p class="col-lg-6 mx-auto lead animate-up">
+              Has a keen eye towards perfectionism, that's why I'm interested in
+              web designing and all that frontend stuff!
+            </p>
+          </div>
+        </div>
+
+        <section class="about">
+          <div class="container about-container rounded-top-4 text-light">
+            <div class="row pt-4">
+              <div class="col-lg-4 border-end">
+                <img
+                  src="data:image/png;base64,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"
+                  class="animate-up"
+                />
+                <h2 class="fw-bold pt-2 animate-up">Frontend Dev</h2>
+                <p class="animate-up">
+                  HTML, CSS, and some JavaScript. Basic essentials, learning other JS Frameworks!
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFY0lEQVR4nO2Zb29TZRyGT4JOEz+CgUh0YwwzVyYra7u1g026+QdwDBzqYIgbbExMWFDUUiJh7ZaRIKiJgDAwYFQEIolgwEBY/AAaUCLvNkqMvjO8IAG8zK9rWbf29PT0eRo5pndyZWe/P/dz5/RkbTPDKKqooooqqihTVYQpmdnD4Mxebs7qBUfQQ2xWD1HJbqhqdg/R2T3gRJ7YSET5BjzVTax0Azy5EU+uO6XddMhO6QZ+N9qYkWtPl8q68MkZkl3ZrLwbBFtLbcwo7+JaYrcj555G5ZU7k+Z1gWDY1LxuOhK71/1hHsq1p0v55k5T5XoQDJtqa2NG5XquJfY7cu3pUr650+R6AwQjD1V10iG7VevSX+lsPR1SyT1Fz64DwchD8kpXd3JN9qs7058Cs54OqeSeooVrwckYqvKuASejfAPqO0AwHCZtuRteA8FwmLTlbnwVBMNh0pZ7STsIhsOkLXfLKyAYDpO23C+tAsFwmLTlXt4Gglk9G9N3Xl5Jy7I2xnPZzQXxWtZKs53ctrViBQhm9Wxk2BnPZc8Ora2M2cltW6taQVA20uxl5aftrNXLQVA20uxl5aftrNeXgWBWz4aVV2iUn7aPQiofXIAthyYI/Ti1J4QuM2qVzapnS51LQTCrZ8PKa89FSCX6DXStntx/czVET0ydEayyWfVsaf2LICgbZfA6ch6SjJyDt9ZO9FPp64DDZyfnhFyyacvd/QIIykYZvL47C0mGtk/0NizlenKudwU35af0UmdzyaYtd08LCGb1bFh5jZ4B4fRB6H0eNjZzb1Mz3hQPd08L//S2wKkDE7OCVTarni31NYNgVs+GldfVU4z+cgJC7dyR+qZmotPn+oIMynWoHX4+AVdOctkqm1XPlt4OgqBsZOK1Ocig1DYH+S3s59Hpc31BHtkc5Eq8tmTiBuWSTVvu/udAUDbK4LWlCXd/E3e3NHGvvwmv6lxBcr/TBIJZPRtpO42MZ5xtZNDqTJnJtLu1MfNHYbMMtvVeIwhm9Wyk7SyiedtixlJnti3m1+Sjn+1MmZHZabtj7y4maCe3bYUWgaBslOoZwB1q4G6cAO5kvauah0OLGEqeKddh/+T/DMz2Cpp7RwMIhibJK7kjwNWE75RHP9zAcPK8JOEAQ9PyDMZ7Aa5Of3IKkntnAARlo6Sfn2jCM+3R3xngr3ivAc9OPz65/jDAn6kzsiO78Tn/1HeFguSO1IOgbGQYRrSeuQN13I3jS3+EB+qJyVlRP75d9dTJtdTS5ny4kz67/JQXNPdQHQjKRhNeobifjwMm/WjyvPv4GMg0O+jjYKL/fkFz7/aCoGxkGMawh63iNezhZKZ+uIKSYQ/R3V5icTxEpGbidTLu5aW/oLn3eEBQNpJQC3l8Ty234p5e1uSdycuauEctt8SzoLn31YLwsRufsplhGHtraU943vqohgrbeRZQtm8hf4vHXjdrM57hoS6ZWznwp27QSdyzhsPx32u4Y9sjsfOJm5Fc8infgP01IHy2gD+S1yqI59FKHttfw20Fn9vikZovldSsyjfg8wUgKBtp8s11T1vukWpiI9VwpFrP34AUX4RC7B2aT53MHK7mhqGqoy4iX8wHXdz3nc94vh5HXZPfALPOujJ/hrClrysoOe4icqyK2HEXqJL0/bKK5mNVjNndT+zc/waYccbFjWMuBiS78aDrq2dA0DXnOH1bCYKuOcfp9NMg6JpznM7MA0HXnOP0fQUIuuYcp3PlxH4oh/Nl5p8zzs6lTmbOlWt4X3/QdGEOkQtzICfKNLyvP2i6UkHJpVIiF0uJXSoDE25cKmNAZv/rvEUVVVRRRRn/I/0Lh5Bt2N8kISwAAAAASUVORK5CYII="
+                  class="animate-up"
+                />
+                <h2 class="fw-bold pt-2 animate-up">UI/UX Design</h2>
+                <p class="animate-up">
+                  Designing through Figma and the other photo editing softwares to create a nice-looking responsive UI!
+                </p>
+              </div>
+              <div class="col-lg-4 border-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="64"
+                  height="64"
+                  viewBox="0 0 64 64"
+                  class="animate-up"
+                >
+                  <linearGradient
+                    id="NYqtCkFrnKYpo6Y7I~_Wea_FRRACRKRsw2s_gr1"
+                    x1="31.287"
+                    x2="31.287"
+                    y1="3.383"
+                    y2="62.905"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#1a6dff"></stop>
+                    <stop offset="1" stop-color="#c822ff"></stop>
+                  </linearGradient>
+                  <path
+                    fill="url(#NYqtCkFrnKYpo6Y7I~_Wea_FRRACRKRsw2s_gr1)"
+                    d="M23.749,48.868c-9.61,2.669,5.846,8.183,18.081,2.971c-2.004-0.775-3.439-1.669-3.439-1.669 c-5.458,1.027-7.99,1.107-12.942,0.546C21.36,50.249,23.749,48.868,23.749,48.868z"
+                  ></path>
+                  <linearGradient
+                    id="NYqtCkFrnKYpo6Y7I~_Web_FRRACRKRsw2s_gr2"
+                    x1="30.914"
+                    x2="30.914"
+                    y1="3.911"
+                    y2="62.581"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#1a6dff"></stop>
+                    <stop offset="1" stop-color="#c822ff"></stop>
+                  </linearGradient>
+                  <path
+                    fill="url(#NYqtCkFrnKYpo6Y7I~_Web_FRRACRKRsw2s_gr2)"
+                    d="M40.365,43.613c-7.23,1.364-11.408,1.32-16.699,0.785c-4.091-0.415-1.412-2.357-1.412-2.357 c-10.587,3.442,5.89,7.346,20.684,3.108C41.365,44.606,40.365,43.613,40.365,43.613z"
+                  ></path>
+                  <linearGradient
+                    id="NYqtCkFrnKYpo6Y7I~_Wec_FRRACRKRsw2s_gr3"
+                    x1="39.018"
+                    x2="39.018"
+                    y1="3.213"
+                    y2="62.957"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#1a6dff"></stop>
+                    <stop offset="1" stop-color="#c822ff"></stop>
+                  </linearGradient>
+                  <path
+                    fill="url(#NYqtCkFrnKYpo6Y7I~_Wec_FRRACRKRsw2s_gr3)"
+                    d="M46.036,13.383c0,0-21.54,5.331-11.252,17.079c3.035,3.463-0.797,6.579-0.797,6.579 s7.706-3.942,4.167-8.879C34.848,23.557,32.313,21.27,46.036,13.383z"
+                  ></path>
+                  <linearGradient
+                    id="NYqtCkFrnKYpo6Y7I~_Wed_FRRACRKRsw2s_gr4"
+                    x1="30.574"
+                    x2="30.574"
+                    y1="3.373"
+                    y2="62.927"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#1a6dff"></stop>
+                    <stop offset="1" stop-color="#c822ff"></stop>
+                  </linearGradient>
+                  <path
+                    fill="url(#NYqtCkFrnKYpo6Y7I~_Wed_FRRACRKRsw2s_gr4)"
+                    d="M51.041,53.916c0,0,1.768,1.448-1.947,2.569c-7.063,2.128-29.395,2.77-35.599,0.085 c-2.23-0.965,1.952-2.304,3.268-2.585c1.372-0.296,2.156-0.241,2.156-0.241c-2.48-1.737-16.031,3.412-6.883,4.886 C36.983,62.653,57.512,56.818,51.041,53.916z"
+                  ></path>
+                  <linearGradient
+                    id="NYqtCkFrnKYpo6Y7I~_Wee_FRRACRKRsw2s_gr5"
+                    x1="29.622"
+                    x2="29.622"
+                    y1="3.213"
+                    y2="62.957"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#1a6dff"></stop>
+                    <stop offset="1" stop-color="#c822ff"></stop>
+                  </linearGradient>
+                  <path
+                    fill="url(#NYqtCkFrnKYpo6Y7I~_Wee_FRRACRKRsw2s_gr5)"
+                    d="M42.465,38.765c1.199-0.817,2.857-1.525,2.857-1.525s-4.721,0.841-9.422,1.237 c-5.753,0.481-11.928,0.574-15.026,0.161c-7.337-0.977,4.023-3.669,4.023-3.669s-4.411-0.297-9.837,2.32 C8.645,40.384,30.93,41.792,42.465,38.765z"
+                  ></path>
+                  <linearGradient
+                    id="NYqtCkFrnKYpo6Y7I~_Wef_FRRACRKRsw2s_gr6"
+                    x1="50.02"
+                    x2="50.02"
+                    y1=".999"
+                    y2="64.288"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#1a6dff"></stop>
+                    <stop offset="1" stop-color="#c822ff"></stop>
+                  </linearGradient>
+                  <path
+                    fill="url(#NYqtCkFrnKYpo6Y7I~_Wef_FRRACRKRsw2s_gr6)"
+                    d="M45.276,46.675C45.222,46.829,45.04,47,45.04,47c15.704-4.351,9.93-15.336,2.423-12.555 c-0.659,0.247-1.005,0.817-1.005,0.817s0.415-0.177,1.345-0.381C51.598,34.048,57.034,40.236,45.276,46.675z"
+                  ></path>
+                  <linearGradient
+                    id="NYqtCkFrnKYpo6Y7I~_Weg_FRRACRKRsw2s_gr7"
+                    x1="32"
+                    x2="32"
+                    y1="3.213"
+                    y2="62.957"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#1a6dff"></stop>
+                    <stop offset="1" stop-color="#c822ff"></stop>
+                  </linearGradient>
+                  <path
+                    fill="url(#NYqtCkFrnKYpo6Y7I~_Weg_FRRACRKRsw2s_gr7)"
+                    d="M32.225,34.854c-2.293-5.208-10.071-9.766,0.004-17.76 c12.564-9.966,6.116-16.447,6.116-16.447c2.602,10.295-9.172,13.403-13.422,19.815C22.029,24.83,26.344,29.523,32.225,34.854z"
+                  ></path>
+                  <linearGradient
+                    id="NYqtCkFrnKYpo6Y7I~_Weh_FRRACRKRsw2s_gr8"
+                    x1="36.106"
+                    x2="36.106"
+                    y1="3.212"
+                    y2="62.958"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop offset="0" stop-color="#1a6dff"></stop>
+                    <stop offset="1" stop-color="#c822ff"></stop>
+                  </linearGradient>
+                  <path
+                    fill="url(#NYqtCkFrnKYpo6Y7I~_Weh_FRRACRKRsw2s_gr8)"
+                    d="M45.697,60.706c-9.607,1.804-21.456,1.593-28.484,0.437c0,0,1.439,1.188,8.837,1.661 c11.256,0.719,28.541-0.399,28.95-5.712C55,57.092,54.213,59.106,45.697,60.706z"
+                  ></path>
+                </svg>
+                <h2 class="fw-bold pt-2 animate-up">Java</h2>
+                <p class="animate-up">
+                  Coding in OOP, design patterns, and basic CRUD operations!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="album py-5" id="projects">
+          <h1 class="display-5 mb-3 fw-bold text-body-emphasis animate-up">PROJECTS</h1>
+          <div class="col-lg-7 mx-auto">
+            <p class="lead mb-4 text-black animate-up">
+              Finally, the portfolio itself! I made these during college as
+              groups projects for the final assignment of each subject
+              respectively.
             </p>
           </div>
           <div class="container py-3">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-              <div class="col">
+              <div class="col animate-up">
                 <div class="card shadow-sm">
                   <img
                     src="img/stitch.png"
@@ -197,7 +380,7 @@
                   />
                   <title>Stitch</title>
                   <div class="card-body">
-                    <h5 class="card-title">Stitch</h5>
+                    <h5 class="card-title fw-bolder">Stitch</h5>
                     <p class="card-text">
                       A platform built for those searching for online tailoring
                       service, whether it is fixing or customizing clothes, we
@@ -219,14 +402,14 @@
                           </a>
                         </button>
                       </div>
-                      <small class="text-body-secondary"
+                      <small class="text-light opacity-25"
                         >Software Engineering</small
                       >
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col animate-up">
                 <div class="card shadow-sm">
                   <img
                     src="img/purwabakti.jpg"
@@ -236,7 +419,7 @@
                   />
                   <title>Desa Purwabakti</title>
                   <div class="card-body">
-                    <h5 class="card-title">Desa Purwabakti</h5>
+                    <h5 class="card-title fw-bolder">Desa Purwabakti</h5>
                     <p class="card-text">
                       See what one of Indonesia's tourism villages has to offer.
                       Breathtaking natural sceneries with a developing local
@@ -258,14 +441,14 @@
                           </a>
                         </button>
                       </div>
-                      <small class="text-body-secondary"
+                      <small class="text-light opacity-25"
                         >Research Methodology</small
                       >
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col animate-up">
                 <div class="card shadow-sm">
                   <img
                     src="img/vorskins.png"
@@ -275,7 +458,7 @@
                   />
                   <title>VOrskins</title>
                   <div class="card-body">
-                    <h5 class="card-title">VOrskins</h5>
+                    <h5 class="card-title fw-bolder">VOrskins</h5>
                     <p class="card-text">
                       Buy all your skincare needs here, with exclusive prices
                       and free promo coupons from our partners! All our products
@@ -297,7 +480,7 @@
                           </a>
                         </button>
                       </div>
-                      <small class="text-body-secondary"
+                      <small class="text-light opacity-25"
                         >Human Computer Interaction</small
                       >
                     </div>
@@ -313,9 +496,10 @@
         <footer
           class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4"
         >
-          <div class="col-md-4 d-flex align-items-center">
+          <div class="col-md-6 d-flex align-items-center">
             <span class="mb-md-0 text-opacity-75 text-light"
-              >&copy 2023, Made by Joaquin Arlind</span
+              >&copy 2023, Thanks <a href="https://icons8.com">Icons8</a> for
+              some of the icons!</span
             >
           </div>
 
@@ -326,7 +510,11 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="nav-link link-body-emphasis px-2"
-                ><button type="button" class="btn btn-warning text-dark text-opacity-75 fw-bold" id="emailBtn">
+                ><button
+                  type="button"
+                  class="btn text-light fw-semibold"
+                  id="emailBtn"
+                >
                   Email Me!
                 </button></a
               >

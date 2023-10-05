@@ -158,8 +158,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   }
 
-  // Add click event listeners to your navbar links
   const navbarLinks = document.querySelectorAll('.nav-link');
+
   navbarLinks.forEach(function (link) {
       link.addEventListener('click', function (e) {
           e.preventDefault();
@@ -168,3 +168,24 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+
+//Animate scroll down animations
+const elements = document.querySelectorAll('.animate-up');
+
+    function checkAnimation() {
+      elements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+        if (rect.top <= windowHeight && !element.classList.contains('animated')) {
+          element.classList.add('animated');
+          element.style.opacity = 1;
+          element.style.transform = 'translateY(0)';
+        }
+      });
+    }
+
+    window.addEventListener('scroll', checkAnimation);
+    window.addEventListener('resize', checkAnimation);
+    window.addEventListener('load', checkAnimation);
