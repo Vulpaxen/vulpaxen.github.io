@@ -12,7 +12,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link href="style.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
   </head>
 
@@ -86,13 +86,34 @@
             <div class="container col-xxl-8 px-4 py-5">
               <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-10 col-sm-8 col-lg-6">
-                  <img
-                    src="img/ZoomedAvatar.png"
-                    class="d-block mx-lg-auto img-fluid rounded-circle"
-                    width="200"
-                    height="300"
-                    loading="lazy"
-                  />
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img
+                          src="img/Portrait.png"
+                          class="d-block mx-lg-auto img-fluid rounded-bottom-circle"
+                          width="250"
+                          height="200"
+                          loading="lazy"
+                          id="frontCard"
+                        />
+                      </div>
+                      <div class="flip-card-back">
+                        <img
+                        src="img/ZoomedAvatar.png"
+                        class="d-block mx-lg-auto img-fluid rounded-circle"
+                        width="250"
+                        height="300"
+                        loading="lazy"
+                        id="backCard"
+                        data-tilt
+                        data-tilt-glare="true"
+                        data-tilt-perspective="500"
+                        data-tilt-reverse="true"
+                      />
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="col-lg-6 bio text-left">
@@ -530,6 +551,7 @@
         </footer>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script type="text/javascript" src="scripts/vanilla-tilt.js"></script>
   </body>
 </html>
