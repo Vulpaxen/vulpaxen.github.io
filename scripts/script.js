@@ -181,7 +181,7 @@ function checkAnimation() {
         element.classList.add("animated");
         element.style.opacity = 1;
         element.style.transform = "translateY(0)";
-      }, index * 90);
+      }, index * 110);
     }
   });
 }

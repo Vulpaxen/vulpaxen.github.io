@@ -17,7 +17,9 @@ a.nav-link {
 /* COVER */
 .coverbg {
   height: 100vh;
-  background: url(img/bgcover.gif) no-repeat center center fixed;
+  background: #000
+    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
+    center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -277,13 +279,13 @@ header.scrolled {
 }
 
 @media (max-width: 992px) {
-  .flip-card-front img{
-    margin-left: 0!important;
+  .flip-card-front img {
+    margin-left: 0 !important;
   }
 }
 
 @media (max-width: 464px) {
-  .flip-card-front img{
+  .flip-card-front img {
     margin-left: auto !important;
   }
 }
@@ -369,5 +371,5 @@ button:hover {
 }
 
 .animate3 {
-  transition-delay: 0.4s;
+  transition-delay: 0.3s;
 }
