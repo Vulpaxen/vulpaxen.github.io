@@ -17,9 +17,7 @@
   </head>
 
   <body class="d-flex h-100 text-center text-bg-dark">
-    <div
-      class="cover-container container-fluid d-flex w-100 h-100 mx-auto flex-column"
-    >
+    <div class="cover-container container-fluid d-flex w-100 h-100 mx-auto">
       <button
         type="button"
         class="btn btn-danger btn-floating btn-lg"
@@ -82,26 +80,25 @@
 
       <main>
         <div class="coverbg justify-content-center">
-          <div class="twinkling">
-            <div class="container col-xxl-8 px-4 py-5">
-              <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                  <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img
-                          src="img/Portrait.png"
-                          class="d-block mx-lg-auto img-fluid rounded-bottom-circle"
-                          width="250"
-                          height="200"
-                          loading="lazy"
-                          id="frontCard"
-                        />
-                      </div>
-                      <div class="flip-card-back">
-                        <img
+          <div class="container col-xxl-8 px-4">
+            <div class="row flex-lg-row-reverse align-items-center g-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img
+                        src="img/Portrait.png"
+                        class="d-block mx-auto img-fluid rounded-bottom-circle"
+                        width="250"
+                        height="200"
+                        loading="lazy"
+                        id="frontCard"
+                      />
+                    </div>
+                    <div class="flip-card-back">
+                      <img
                         src="img/ZoomedAvatar.png"
-                        class="d-block mx-lg-auto img-fluid rounded-circle"
+                        class="d-block mx-auto img-fluid rounded-circle"
                         width="250"
                         height="300"
                         loading="lazy"
@@ -111,101 +108,96 @@
                         data-tilt-perspective="500"
                         data-tilt-reverse="true"
                       />
-                      </div>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="col-lg-6 bio text-left">
-                  <h1
-                    class="typewrite display-4 fw-bold text-light lh-1 mb-3 text-start"
-                    data-period="2000"
-                    data-type='[ "Hello!", "你好!", "안녕!", "नमस्ते!", "مرحبا", "どうも!", "Salut!", "¡Hola!", "Ciao!", "Γεια σου!", "Hej!", "สวัสดี!", "Chào!", "Guten Tag!", "Привіт!"]'
-                  >
-                    <span class="lead text-start wrap">&nbsp;</span>
-                  </h1>
+              <div class="col-lg-6 bio text-left">
+                <h1
+                  class="typewrite display-4 fw-bold text-light lh-1 mb-3 text-start"
+                  data-period="2000"
+                  data-type='[ "Hello!", "你好!", "안녕!", "नमस्ते!", "مرحبا", "どうも!", "Salut!", "¡Hola!", "Ciao!", "Γεια σου!", "Hej!", "สวัสดี!", "Chào!", "Guten Tag!", "Привіт!"]'
+                >
+                  <span class="lead text-start wrap">&nbsp;</span>
+                </h1>
 
-                  <p class="lead text-start">
-                    Welcome to my portfolio website! Here you can find my
-                    projects and see their respective repositories. If anything
-                    peaks your interest, let me know through my socials or my
-                    email. Thanks!
-                  </p>
+                <p class="lead text-start">
+                  Welcome to my portfolio website! Here you can find my projects
+                  and see their respective repositories. If anything peaks your
+                  interest, let me know through my socials or my email. Thanks!
+                </p>
 
-                  <ul
-                    class="nav col-md-4 justify-content-start list-unstyled d-flex mt-4"
-                  >
-                    <li class="me-3">
-                      <a
-                        class="text-body-secondary"
-                        href="https://www.github.com/Vulpaxen"
+                <ul
+                  class="nav col-md-4 justify-content-start list-unstyled d-flex mt-4"
+                >
+                  <li class="me-3">
+                    <a
+                      class="text-body-secondary"
+                      href="https://www.github.com/Vulpaxen"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        fill="currentColor"
+                        class="bi bi-github"
+                        viewBox="0 0 16 16"
+                        color="white"
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="30"
-                          height="30"
-                          fill="currentColor"
-                          class="bi bi-github"
-                          viewBox="0 0 16 16"
-                          color="white"
-                        >
-                          <path
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                          />
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="me-3">
-                      <a
-                        class="text-body-secondary"
-                        href="https://www.linkedin.com/in/joaquin-arlind-33118a210"
-                        target="_blank"
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="30"
-                          height="30"
-                          fill="currentColor"
-                          class="bi bi-linkedin"
-                          viewBox="0 0 16 16"
-                          color="white"
-                        >
-                          <path
-                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                          />
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="me-3">
-                      <a
-                        class="text-body-secondary"
-                        href="https://instagram.com/joaquinarlind"
+                        <path
+                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="me-3">
+                    <a
+                      class="text-body-secondary"
+                      href="https://www.linkedin.com/in/joaquin-arlind-33118a210"
+                      target="_blank"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        fill="currentColor"
+                        class="bi bi-linkedin"
+                        viewBox="0 0 16 16"
+                        color="white"
                       >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="30"
-                          height="30"
-                          fill="currentColor"
-                          class="bi bi-instagram"
-                          viewBox="0 0 16 16"
-                          color="white"
-                        >
-                          <path
-                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-                          />
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="mouse-scroll-container">
-                  <div class="mouse-scroll"></div>
-                </div>
+                        <path
+                          d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="me-3">
+                    <a
+                      class="text-body-secondary"
+                      href="https://instagram.com/joaquinarlind"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        fill="currentColor"
+                        class="bi bi-instagram"
+                        viewBox="0 0 16 16"
+                        color="white"
+                      >
+                        <path
+                          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="pt-5 text-center bg-dark" id="about">
+        <div class="pt-4 text-center bg-dark" id="about">
           <div class="py-2 container text-light">
             <h1 class="display-6 fw-semibold animate-up">Hi, I'm Joa!</h1>
             <p class="col-lg-7 mx-auto lead py-3 text-center animate-up">
@@ -230,7 +222,7 @@
                 />
                 <h2 class="fw-bold pt-2 animate-up">Frontend Dev</h2>
                 <p class="animate-up">
-                  HTML, CSS, and some JavaScript. Basic essentials, learning
+                  HTML, CSS, and some ReactJS. Basic essentials, still learning
                   other JS Frameworks!
                 </p>
               </div>
@@ -241,144 +233,16 @@
                 />
                 <h2 class="fw-bold pt-2 animate-up">UI/UX Design</h2>
                 <p class="animate-up">
-                  Designing through Figma and the other photo editing softwares
-                  to create a nice-looking responsive UI!
+                  Designing through Figma, Photoshop, and other designing
+                  softwares to create a nice-looking responsive UI!
                 </p>
               </div>
               <div class="col-lg-4 border-start">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="64"
-                  height="64"
-                  viewBox="0 0 64 64"
-                  class="animate-up"
-                >
-                  <linearGradient
-                    id="NYqtCkFrnKYpo6Y7I~_Wea_FRRACRKRsw2s_gr1"
-                    x1="31.287"
-                    x2="31.287"
-                    y1="3.383"
-                    y2="62.905"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop offset="0" stop-color="#1a6dff"></stop>
-                    <stop offset="1" stop-color="#c822ff"></stop>
-                  </linearGradient>
-                  <path
-                    fill="url(#NYqtCkFrnKYpo6Y7I~_Wea_FRRACRKRsw2s_gr1)"
-                    d="M23.749,48.868c-9.61,2.669,5.846,8.183,18.081,2.971c-2.004-0.775-3.439-1.669-3.439-1.669 c-5.458,1.027-7.99,1.107-12.942,0.546C21.36,50.249,23.749,48.868,23.749,48.868z"
-                  ></path>
-                  <linearGradient
-                    id="NYqtCkFrnKYpo6Y7I~_Web_FRRACRKRsw2s_gr2"
-                    x1="30.914"
-                    x2="30.914"
-                    y1="3.911"
-                    y2="62.581"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop offset="0" stop-color="#1a6dff"></stop>
-                    <stop offset="1" stop-color="#c822ff"></stop>
-                  </linearGradient>
-                  <path
-                    fill="url(#NYqtCkFrnKYpo6Y7I~_Web_FRRACRKRsw2s_gr2)"
-                    d="M40.365,43.613c-7.23,1.364-11.408,1.32-16.699,0.785c-4.091-0.415-1.412-2.357-1.412-2.357 c-10.587,3.442,5.89,7.346,20.684,3.108C41.365,44.606,40.365,43.613,40.365,43.613z"
-                  ></path>
-                  <linearGradient
-                    id="NYqtCkFrnKYpo6Y7I~_Wec_FRRACRKRsw2s_gr3"
-                    x1="39.018"
-                    x2="39.018"
-                    y1="3.213"
-                    y2="62.957"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop offset="0" stop-color="#1a6dff"></stop>
-                    <stop offset="1" stop-color="#c822ff"></stop>
-                  </linearGradient>
-                  <path
-                    fill="url(#NYqtCkFrnKYpo6Y7I~_Wec_FRRACRKRsw2s_gr3)"
-                    d="M46.036,13.383c0,0-21.54,5.331-11.252,17.079c3.035,3.463-0.797,6.579-0.797,6.579 s7.706-3.942,4.167-8.879C34.848,23.557,32.313,21.27,46.036,13.383z"
-                  ></path>
-                  <linearGradient
-                    id="NYqtCkFrnKYpo6Y7I~_Wed_FRRACRKRsw2s_gr4"
-                    x1="30.574"
-                    x2="30.574"
-                    y1="3.373"
-                    y2="62.927"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop offset="0" stop-color="#1a6dff"></stop>
-                    <stop offset="1" stop-color="#c822ff"></stop>
-                  </linearGradient>
-                  <path
-                    fill="url(#NYqtCkFrnKYpo6Y7I~_Wed_FRRACRKRsw2s_gr4)"
-                    d="M51.041,53.916c0,0,1.768,1.448-1.947,2.569c-7.063,2.128-29.395,2.77-35.599,0.085 c-2.23-0.965,1.952-2.304,3.268-2.585c1.372-0.296,2.156-0.241,2.156-0.241c-2.48-1.737-16.031,3.412-6.883,4.886 C36.983,62.653,57.512,56.818,51.041,53.916z"
-                  ></path>
-                  <linearGradient
-                    id="NYqtCkFrnKYpo6Y7I~_Wee_FRRACRKRsw2s_gr5"
-                    x1="29.622"
-                    x2="29.622"
-                    y1="3.213"
-                    y2="62.957"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop offset="0" stop-color="#1a6dff"></stop>
-                    <stop offset="1" stop-color="#c822ff"></stop>
-                  </linearGradient>
-                  <path
-                    fill="url(#NYqtCkFrnKYpo6Y7I~_Wee_FRRACRKRsw2s_gr5)"
-                    d="M42.465,38.765c1.199-0.817,2.857-1.525,2.857-1.525s-4.721,0.841-9.422,1.237 c-5.753,0.481-11.928,0.574-15.026,0.161c-7.337-0.977,4.023-3.669,4.023-3.669s-4.411-0.297-9.837,2.32 C8.645,40.384,30.93,41.792,42.465,38.765z"
-                  ></path>
-                  <linearGradient
-                    id="NYqtCkFrnKYpo6Y7I~_Wef_FRRACRKRsw2s_gr6"
-                    x1="50.02"
-                    x2="50.02"
-                    y1=".999"
-                    y2="64.288"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop offset="0" stop-color="#1a6dff"></stop>
-                    <stop offset="1" stop-color="#c822ff"></stop>
-                  </linearGradient>
-                  <path
-                    fill="url(#NYqtCkFrnKYpo6Y7I~_Wef_FRRACRKRsw2s_gr6)"
-                    d="M45.276,46.675C45.222,46.829,45.04,47,45.04,47c15.704-4.351,9.93-15.336,2.423-12.555 c-0.659,0.247-1.005,0.817-1.005,0.817s0.415-0.177,1.345-0.381C51.598,34.048,57.034,40.236,45.276,46.675z"
-                  ></path>
-                  <linearGradient
-                    id="NYqtCkFrnKYpo6Y7I~_Weg_FRRACRKRsw2s_gr7"
-                    x1="32"
-                    x2="32"
-                    y1="3.213"
-                    y2="62.957"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop offset="0" stop-color="#1a6dff"></stop>
-                    <stop offset="1" stop-color="#c822ff"></stop>
-                  </linearGradient>
-                  <path
-                    fill="url(#NYqtCkFrnKYpo6Y7I~_Weg_FRRACRKRsw2s_gr7)"
-                    d="M32.225,34.854c-2.293-5.208-10.071-9.766,0.004-17.76 c12.564-9.966,6.116-16.447,6.116-16.447c2.602,10.295-9.172,13.403-13.422,19.815C22.029,24.83,26.344,29.523,32.225,34.854z"
-                  ></path>
-                  <linearGradient
-                    id="NYqtCkFrnKYpo6Y7I~_Weh_FRRACRKRsw2s_gr8"
-                    x1="36.106"
-                    x2="36.106"
-                    y1="3.212"
-                    y2="62.958"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop offset="0" stop-color="#1a6dff"></stop>
-                    <stop offset="1" stop-color="#c822ff"></stop>
-                  </linearGradient>
-                  <path
-                    fill="url(#NYqtCkFrnKYpo6Y7I~_Weh_FRRACRKRsw2s_gr8)"
-                    d="M45.697,60.706c-9.607,1.804-21.456,1.593-28.484,0.437c0,0,1.439,1.188,8.837,1.661 c11.256,0.719,28.541-0.399,28.95-5.712C55,57.092,54.213,59.106,45.697,60.706z"
-                  ></path>
-                </svg>
+                <img src="img/java.svg" class="animate-up" alt="Java SVG" />
                 <h2 class="fw-bold pt-2 animate-up">Java</h2>
                 <p class="animate-up">
-                  Coding in OOP, design patterns, and basic CRUD operations!
+                  Object oriented code & design, architectural pattern, and CRUD
+                  operations!
                 </p>
               </div>
             </div>
@@ -476,7 +340,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col animate-up">
+              <div class="col animate-up animate3">
                 <div class="card shadow-sm">
                   <img
                     src="img/vorskins.png"
@@ -518,38 +382,37 @@
             </div>
           </div>
         </div>
-      </main>
-
-      <div class="container" id="footer">
-        <footer
-          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4"
-        >
-          <div class="col-md-6 d-flex align-items-center">
-            <span class="mb-md-0 text-opacity-75 text-light"
-              >&copy 2023, Thanks <a href="https://icons8.com">Icons8</a> for
-              some of the icons!</span
-            >
-          </div>
-
-          <ul class="nav">
-            <li class="nav-item">
-              <a
-                href="mailto:joaquinarlind26@gmail.com?subject=Regarding the Portfolio Website!&body=Hi there!"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="nav-link link-body-emphasis px-2"
-                ><button
-                  type="button"
-                  class="btn text-light fw-semibold email-button"
-                  id="emailBtn"
-                >
-                  Email Me!
-                </button></a
+        <div class="container" id="footer">
+          <footer
+            class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4"
+          >
+            <div class="col-md-6 d-flex align-items-center">
+              <span class="mb-md-0 text-opacity-75 text-light"
+                >&copy 2023, Thanks <a href="https://icons8.com">Icons8</a> for
+                some of the icons!</span
               >
-            </li>
-          </ul>
-        </footer>
-      </div>
+            </div>
+
+            <ul class="nav">
+              <li class="nav-item">
+                <a
+                  href="mailto:joaquinarlind26@gmail.com?subject=Regarding the Portfolio Website!&body=Hi there!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="nav-link link-body-emphasis px-2"
+                  ><button
+                    type="button"
+                    class="btn text-light fw-semibold email-button"
+                    id="emailBtn"
+                  >
+                    Email Me!
+                  </button></a
+                >
+              </li>
+            </ul>
+          </footer>
+        </div>
+      </main>
     </div>
     <script src="scripts/script.js"></script>
     <script type="text/javascript" src="scripts/vanilla-tilt.js"></script>

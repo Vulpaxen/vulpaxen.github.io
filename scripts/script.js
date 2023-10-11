@@ -172,19 +172,19 @@ document.addEventListener("DOMContentLoaded", function () {
 const elements = document.querySelectorAll(".animate-up");
 
 function checkAnimation() {
-  elements.forEach((element) => {
+  elements.forEach((element, index) => {
     const rect = element.getBoundingClientRect();
-    const windowHeight =
-      window.innerHeight || document.documentElement.clientHeight;
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
     if (rect.top <= windowHeight && !element.classList.contains("animated")) {
-      element.classList.add("animated");
-      element.style.opacity = 1;
-      element.style.transform = "translateY(0)";
+      setTimeout(() => {
+        element.classList.add("animated");
+        element.style.opacity = 1;
+        element.style.transform = "translateY(0)";
+      }, index * 90);
     }
   });
 }
-
 window.addEventListener("scroll", checkAnimation);
 window.addEventListener("resize", checkAnimation);
 window.addEventListener("load", checkAnimation);
