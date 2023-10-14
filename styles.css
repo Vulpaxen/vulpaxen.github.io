@@ -129,51 +129,11 @@ header.scrolled {
 
 @media (max-width: 460px) {
   .nav-link {
-    font-size: 12px;
-    padding-left: 0.1rem !important;
-    padding-right: 0.1rem !important;
+    font-size: 14px;
   }
   #logo {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-@media (max-width: 345px) {
-  .nav-item {
-    padding-left: 8px !important;
-    padding-right: 8px !important;
-  }
-}
-
-@media (max-width: 364px) {
-  .nav-item {
-    padding-left: 6px !important;
-    padding-right: 6px !important;
-  }
-}
-
-@media (max-width: 290px) {
-  .nav-item {
-    padding-left: 4px !important;
-    padding-right: 4px !important;
-  }
-}
-
-@media (max-width: 253px) {
-  .nav-item {
-    padding-left: 2px !important;
-    padding-right: 2px !important;
-  }
-}
-
-@media (max-width: 239px) {
-  .nav-item {
-    padding-left: 0.2px !important;
-    padding-right: 0.2px !important;
-  }
-  .nav-link {
-    font-size: 10px;
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -368,8 +328,4 @@ button:hover {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.5s, transform 0.5s;
-}
-
-.animate3 {
-  transition-delay: 0.3s;
 }
