@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Joa's Portofolio</title>
-
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -43,7 +42,7 @@
       </button>
 
       <header
-        class="fixed-top flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4"
+        class="fixed-top flex-wrap align-items-center justify-content-center justify-content-md-between py-3 pt-4 mb-3"
         id="header"
       >
         <div class="col-md-3 mb-2 mb-md-0">
@@ -81,16 +80,16 @@
       <main>
         <div class="coverbg justify-content-center">
           <div class="container col-xxl-8 px-4">
-            <div class="row flex-lg-row-reverse align-items-center g-5">
-              <div class="col-10 col-sm-8 col-lg-6">
+            <div class="row flex-lg-row-reverse g-5 flex-column-reverse">
+              <div class="col-10 col-sm-8 col-lg-6 align-self-center">
                 <div class="flip-card">
+                  
                   <div class="flip-card-inner">
                     <div class="flip-card-front">
                       <img
                         src="img/Portrait.png"
-                        class="d-block mx-auto img-fluid rounded-bottom-circle"
-                        width="250"
-                        height="200"
+                        class="d-block mx-auto rounded-bottom-circle"
+                        height="230"
                         loading="lazy"
                         id="frontCard"
                       />
@@ -98,9 +97,8 @@
                     <div class="flip-card-back">
                       <img
                         src="img/ZoomedAvatar.png"
-                        class="d-block mx-auto img-fluid rounded-circle"
-                        width="250"
-                        height="300"
+                        class="d-block mx-auto rounded-circle"
+                        height="230"
                         loading="lazy"
                         id="backCard"
                         data-tilt
@@ -110,6 +108,7 @@
                       />
                     </div>
                   </div>
+
                 </div>
               </div>
 
@@ -201,13 +200,10 @@
           <div class="py-2 container text-light">
             <h1 class="display-6 fw-semibold animate-up">Hi, I'm Joa!</h1>
             <p class="col-lg-7 mx-auto lead py-3 text-center animate-up">
-              Nice to meet you, thanks for visiting my website! I'm currently an
-              undergraduate Computer Science student, still lacking in
-              experience but I'm always seeking new knowledge to learn.
+              Nice to meet you, thanks for visiting my website! I'm currently a Master's Management Information System student, always seeking new knowledge to learn.
             </p>
             <p class="col-lg-6 mx-auto lead animate-up">
-              Has a keen eye towards perfectionism, that's why I'm interested in
-              web designing and all that frontend stuff!
+              Has a keen eye towards perfectionism, that's why in-depth and critical analysis are my forte.
             </p>
           </div>
         </div>
@@ -216,33 +212,24 @@
           <div class="container about-container rounded-top-4 text-light">
             <div class="row pt-4">
               <div class="col-lg-4 border-end">
-                <img
-                  src="data:image/png;base64,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"
-                  class="animate-up"
-                />
-                <h2 class="fw-bold pt-2 animate-up">Frontend Dev</h2>
+                <img src="img/software-development.png" class="animate-up" alt="Project Management" />
+                <h2 class="fw-bold pt-2 animate-up">Software Development</h2>
                 <p class="animate-up">
-                  HTML, CSS, and some ReactJS. Basic essentials, still learning
-                  other JS Frameworks!
+                  Frontend Development, Mobile Apps Development, and UI/UX Development.
                 </p>
               </div>
               <div class="col-lg-4">
-                <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFY0lEQVR4nO2Zb29TZRyGT4JOEz+CgUh0YwwzVyYra7u1g026+QdwDBzqYIgbbExMWFDUUiJh7ZaRIKiJgDAwYFQEIolgwEBY/AAaUCLvNkqMvjO8IAG8zK9rWbf29PT0eRo5pndyZWe/P/dz5/RkbTPDKKqooooqqihTVYQpmdnD4Mxebs7qBUfQQ2xWD1HJbqhqdg/R2T3gRJ7YSET5BjzVTax0Azy5EU+uO6XddMhO6QZ+N9qYkWtPl8q68MkZkl3ZrLwbBFtLbcwo7+JaYrcj555G5ZU7k+Z1gWDY1LxuOhK71/1hHsq1p0v55k5T5XoQDJtqa2NG5XquJfY7cu3pUr650+R6AwQjD1V10iG7VevSX+lsPR1SyT1Fz64DwchD8kpXd3JN9qs7058Cs54OqeSeooVrwckYqvKuASejfAPqO0AwHCZtuRteA8FwmLTlbnwVBMNh0pZ7STsIhsOkLXfLKyAYDpO23C+tAsFwmLTlXt4Gglk9G9N3Xl5Jy7I2xnPZzQXxWtZKs53ctrViBQhm9Wxk2BnPZc8Ora2M2cltW6taQVA20uxl5aftrNXLQVA20uxl5aftrNeXgWBWz4aVV2iUn7aPQiofXIAthyYI/Ti1J4QuM2qVzapnS51LQTCrZ8PKa89FSCX6DXStntx/czVET0ydEayyWfVsaf2LICgbZfA6ch6SjJyDt9ZO9FPp64DDZyfnhFyyacvd/QIIykYZvL47C0mGtk/0NizlenKudwU35af0UmdzyaYtd08LCGb1bFh5jZ4B4fRB6H0eNjZzb1Mz3hQPd08L//S2wKkDE7OCVTarni31NYNgVs+GldfVU4z+cgJC7dyR+qZmotPn+oIMynWoHX4+AVdOctkqm1XPlt4OgqBsZOK1Ocig1DYH+S3s59Hpc31BHtkc5Eq8tmTiBuWSTVvu/udAUDbK4LWlCXd/E3e3NHGvvwmv6lxBcr/TBIJZPRtpO42MZ5xtZNDqTJnJtLu1MfNHYbMMtvVeIwhm9Wyk7SyiedtixlJnti3m1+Sjn+1MmZHZabtj7y4maCe3bYUWgaBslOoZwB1q4G6cAO5kvauah0OLGEqeKddh/+T/DMz2Cpp7RwMIhibJK7kjwNWE75RHP9zAcPK8JOEAQ9PyDMZ7Aa5Of3IKkntnAARlo6Sfn2jCM+3R3xngr3ivAc9OPz65/jDAn6kzsiO78Tn/1HeFguSO1IOgbGQYRrSeuQN13I3jS3+EB+qJyVlRP75d9dTJtdTS5ny4kz67/JQXNPdQHQjKRhNeobifjwMm/WjyvPv4GMg0O+jjYKL/fkFz7/aCoGxkGMawh63iNezhZKZ+uIKSYQ/R3V5icTxEpGbidTLu5aW/oLn3eEBQNpJQC3l8Ty234p5e1uSdycuauEctt8SzoLn31YLwsRufsplhGHtraU943vqohgrbeRZQtm8hf4vHXjdrM57hoS6ZWznwp27QSdyzhsPx32u4Y9sjsfOJm5Fc8infgP01IHy2gD+S1yqI59FKHttfw20Fn9vikZovldSsyjfg8wUgKBtp8s11T1vukWpiI9VwpFrP34AUX4RC7B2aT53MHK7mhqGqoy4iX8wHXdz3nc94vh5HXZPfALPOujJ/hrClrysoOe4icqyK2HEXqJL0/bKK5mNVjNndT+zc/waYccbFjWMuBiS78aDrq2dA0DXnOH1bCYKuOcfp9NMg6JpznM7MA0HXnOP0fQUIuuYcp3PlxH4oh/Nl5p8zzs6lTmbOlWt4X3/QdGEOkQtzICfKNLyvP2i6UkHJpVIiF0uJXSoDE25cKmNAZv/rvEUVVVRRRRn/I/0Lh5Bt2N8kISwAAAAASUVORK5CYII="
-                  class="animate-up"
-                />
-                <h2 class="fw-bold pt-2 animate-up">UI/UX Design</h2>
+                <img src="img/business-analysis.png" class="animate-up" alt="Project Management" />
+                <h2 class="fw-bold pt-2 animate-up">Business Analysis</h2>
                 <p class="animate-up">
-                  Designing through Figma, Photoshop, and other designing
-                  softwares to create a nice-looking responsive UI!
+                  Database Management Systems (SQL and NoSQL), Data Analysis & Visualization, and Business Modeling.
                 </p>
               </div>
               <div class="col-lg-4 border-start">
-                <img src="img/java.svg" class="animate-up" alt="Java SVG" />
-                <h2 class="fw-bold pt-2 animate-up">Java</h2>
+                <img src="img/project-management.png" class="animate-up" alt="Project Management" />
+                <h2 class="fw-bold pt-2 animate-up">Project Management</h2>
                 <p class="animate-up">
-                  Object oriented code & design, architectural pattern, and CRUD
-                  operations!
+                  Agile Methodology in PDLC (Product Development Life Cycle), Team Coordination, and Tech-Based Problem-Solving.
                 </p>
               </div>
             </div>
@@ -256,8 +243,7 @@
           <div class="col-lg-7 mx-auto">
             <p class="lead mb-4 text-black animate-up">
               Finally, the portfolio itself! I made these during college as
-              groups projects for the final assignment of each subject
-              respectively.
+              groups projects and one project from my internship.
             </p>
           </div>
           <div class="container py-3">
@@ -304,45 +290,6 @@
               <div class="col animate-up">
                 <div class="card shadow-sm">
                   <img
-                    src="img/purwabakti.jpg"
-                    class="card-img-top"
-                    height="360"
-                    alt="Purwabakti"
-                  />
-                  <title>Desa Purwabakti</title>
-                  <div class="card-body">
-                    <h5 class="card-title fw-bolder">Desa Purwabakti</h5>
-                    <p class="card-text">
-                      See what one of Indonesia's tourism villages has to offer.
-                      Breathtaking natural sceneries with a developing local
-                      community awaits your visit.
-                    </p>
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <div class="btn-group">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                        >
-                          <a
-                            href="https://github.com/Vulpaxen/DesaWisataPurwabakti-FrontEnd"
-                            target="_blank"
-                          >
-                            View
-                          </a>
-                        </button>
-                      </div>
-                      <small class="text-light opacity-25"
-                        >Research Methodology</small
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col animate-up">
-                <div class="card shadow-sm">
-                  <img
                     src="img/vorskins.png"
                     class="card-img-top"
                     height="360"
@@ -374,6 +321,42 @@
                       </div>
                       <small class="text-light opacity-25"
                         >Human Computer Interaction</small
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col animate-up">
+                <div class="card shadow-sm">
+                  <img
+                    src="img/itu-website.jpg"
+                    class="card-img-top"
+                    height="360"
+                    alt="ITU Website"
+                  />
+                  <title>ITU Website</title>
+                  <div class="card-body">
+                    <h5 class="card-title fw-bolder">ITU Website</h5>
+                    <p class="card-text">
+                      The main website of PT. Indotruck Utama, scripted in HTML & CSS, converted to Angular for better CRUD operations using MongoDB and ExpressJS via the admin panel.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="btn-group">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          <a
+                            target="_blank"
+                          >
+                            Privated, sorry
+                          </a>
+                        </button>
+                      </div>
+                      <small class="text-light opacity-25"
+                        >Internship Program</small
                       >
                     </div>
                   </div>

@@ -1,7 +1,4 @@
 /* BASE */
-body { 
-
-}
 a {
   text-decoration: none;
   color: rgb(70, 70, 70);
@@ -19,15 +16,15 @@ a.nav-link {
 
 /* COVER */
 .coverbg {
-  height: 100vh;
+  min-height: 100vh;
   background: #000
-    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
-    center;
+    url(https://img.freepik.com/free-vector/bring-night-space-wallpaper-with-glowing-starfield_1017-53512.jpg?t=st=1737183766~exp=1737187366~hmac=a2edab25061dc830497c1ffb8724cf23835c3dfec0aaf9f05d7516f9afdecce0&w=1060) repeat top center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   background-attachment: fixed;
 }
+
 
 .coverbg h1 {
   margin: auto;
@@ -46,6 +43,19 @@ a.nav-link {
 .typewrite {
   display: flex;
   align-items: flex-start;
+}
+
+@media (max-width: 991px) {
+  .coverbg {
+    min-height: 130vh;
+    padding-top: 20vh;
+  }
+}
+
+@media (max-width: 448px) {
+  .coverbg {
+    min-height: 150vh;
+  }
 }
 
 /* HEADER */
@@ -130,7 +140,7 @@ header.scrolled {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 430px) {
   .nav-link {
     font-size: 14px;
   }
@@ -205,9 +215,18 @@ header.scrolled {
 
 /* AVATAR */
 .flip-card {
-  width: 400px;
-  height: 300px;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  min-height: 30vh;
+  height: auto;
   perspective: 1000px;
+  margin: auto; /* Center the card */
+}
+
+.flip-card-front img,
+.flip-card-back img {
+  width: auto;
 }
 
 .flip-card-inner {
@@ -234,23 +253,10 @@ header.scrolled {
 .flip-card-back {
   color: white;
   transform: rotateY(180deg);
-  top: 50px;
 }
 
 .flip-card.flipped .flip-card-inner {
   transform: rotateY(180deg);
-}
-
-@media (max-width: 992px) {
-  .flip-card-front img {
-    margin-left: 0 !important;
-  }
-}
-
-@media (max-width: 464px) {
-  .flip-card-front img {
-    margin-left: auto !important;
-  }
 }
 
 /* ALBUM */
